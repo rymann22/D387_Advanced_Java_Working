@@ -23,7 +23,10 @@
   <div class="scene" id="welcome">
     <article class="content">
 
-
+  <div *ngIf="messages">
+    <h2>{{ messages.en }}</h2>
+    <h2>{{ messages.fr }}</h2>
+  </div>
 
       <div class="row">
         <div class="col-12">
