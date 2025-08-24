@@ -23,10 +23,13 @@
   <div class="scene" id="welcome">
     <article class="content">
 
- 
+  <div *ngIf="messages">
+    <h2>{{ messages.en }}</h2>
+    <h2>{{ messages.fr }}</h2>
+  </div>
 
       <div class="row">
-        <div class=""col-12>
+        <div class="col-12">
           <div class="gallery">
             <img src="assets/images/intro_room.jpg" alt="Intro Gallery Room Sample Pictures">
             <img src="assets/images/intro_pool.jpg" alt="Intro Gallery Pool Sample Pictures">
@@ -58,7 +61,7 @@
               </div>
               </form>
 
-        
+
         </div>
       </div>
 
